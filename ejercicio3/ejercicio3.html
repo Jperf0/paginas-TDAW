@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3 - Comparte tus viajes</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    header { background-color: #f4f4f4; padding: 10px; text-align: center; }
+    /* Nav con viñetas y sangría clásica */
+    nav ul { list-style: disc; padding-left: 40px; margin: 0; }
+    nav li { margin: 5px 0; }
+    nav a { color: blue; text-decoration: underline; }
+    figure { display: inline-block; margin: 10px; text-align: center; }
+    /* Íconos de compartir */
+    .share img { margin-right: 10px; vertical-align: middle; }
+    footer { margin-top: 30px; text-align: center; font-size: 0.9em; color: #555; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Comparte tus viajes</h1>
+  </header>
+
+  <main>
+    <!-- Descripción -->
+    <section>
+      <h2>Nueva York - Central Park</h2>
+
+      <nav>
+        <ul>
+          <li><a href="https://es.wikipedia.org/wiki/Central_Park" target="_blank" rel="noopener noreferrer">Descripción</a></li>
+          <li><a href="https://www.gettyimages.com.mx/fotos/central-park" target="_blank" rel="noopener noreferrer">Fotos relacionadas</a></li>
+          <li><a href="#comentarios">Comentarios</a></li>
+        </ul>
+      </nav>
+
+      <h3>Descripción</h3>
+      <p><em>Foto de Randy Connolly</em></p>
+
+      <p>
+        Esta foto del Estanque del Conservatorio en
+        <a href="https://es.wikipedia.org/wiki/Central_Park" target="_blank" rel="noopener noreferrer">Central Park</a>
+        en
+        <a href="https://es.wikipedia.org/wiki/Ciudad_de_Nueva_York" target="_blank" rel="noopener noreferrer">Ciudad de Nueva York</a>
+        fue tomada en Octubre 22, 2021 con una cámara Canon EOS 30D.
+      </p>
+
+      <figure>
+        <img src="central-park.jpg" alt="Central Park" width="400">
+        <figcaption><em>Estanque del Conservatorio en Central Park</em></figcaption>
+      </figure>
+
+      <!-- Compartir -->
+      <section class="share" aria-label="Compartir">
+        <h3>Compartir</h3>
+        <a href="mailto:?subject=Foto Central Park&body=Te comparto esta foto: https://tusitio.com/centralpark">
+          <img src="email_16.png" alt="Compartir por correo" width="32" height="32">
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://tusitio.com/centralpark&text=Foto%20de%20Central%20Park"
+           target="_blank" rel="noopener noreferrer">
+          <img src="twitter_16.png" alt="Compartir en Twitter" width="32" height="32">
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://tusitio.com/centralpark"
+           target="_blank" rel="noopener noreferrer">
+          <img src="facebook_16.png" alt="Compartir en Facebook" width="32" height="32">
+        </a>
+        <a href="https://www.flickr.com/" target="_blank" rel="noopener noreferrer">
+          <img src="flickr_16.png" alt="Abrir Flickr" width="32" height="32">
+        </a>
+        <a href="https://rss.com/es/" target="_blank" rel="noopener noreferrer">
+          <img src="rss_16.png" alt="RSS" width="32" height="32">
+        </a>
+      </section>
+    </section>
+
+    <!-- Fotos relacionadas -->
+    <section>
+      <h2>Fotos relacionadas</h2>
+
+      <figure>
+        <img src="related-large1.jpg" alt="Foto relacionada 1" width="200" height="150">
+        <figcaption>Foto relacionada 1</figcaption>
+      </figure>
+
+      <figure>
+        <img src="related-large2.jpg" alt="Foto relacionada 2" width="200" height="150">
+        <figcaption>Foto relacionada 2</figcaption>
+      </figure>
+
+      <figure>
+        <img src="related-large3.jpg" alt="Foto relacionada 3" width="200" height="150">
+        <figcaption>Foto relacionada 3</figcaption>
+      </figure>
+    </section>
+
+    <!-- Reseñas / Comentarios -->
+    <section id="comentarios">
+      <h2>Reseñas</h2>
+      <p><strong>Por Ricardo</strong> · 15 Septiembre, 2021</p>
+      <p>Tranquilo con el HDR amigo</p>
+
+      <p><strong>Por Susana</strong> · 1 Octubre, 2021</p>
+      <p>Amo Central Park</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright © 2025 Comparte tus viajes</p>
+    <p>Unidad de aprendizaje: Tecnologías para el Desarrollo de Aplicaciones Web</p>
+  </footer>
+</body>
+</html>

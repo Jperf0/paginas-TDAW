@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        figure {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mi portafolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Galería</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Presentación</h2>
+            <p>
+                Mi nombre es JPerf y me gustan los carros y la IA
+            </p>
+            <ul>
+                <li>Acuariofilia</li>
+                <li>Lamborghini</li>
+                <li>Aviones</li>
+            </ul>
+            <img src="lambo.jpg" alt="mi foto" width="300" height="200">
+        </section>
+
+        <!-- Galería multimedia -->
+        <section>
+            <h2>Galería</h2>
+
+            <figure>
+                <img src="boeing.webp" alt="Imagen 1" width="200" height="150">
+                <figcaption>Boeing</figcaption>
+            </figure>
+
+            <figure>
+                <img src="nino.png" alt="Imagen 2" width="200" height="250">
+                <figcaption>Nino</figcaption>
+            </figure>
+
+            <figure>
+                <img src="mt.jpg" alt="Imagen 3" width="200" height="150">
+                <figcaption>Monster Tank</figcaption>
+            </figure>
+
+            <h3>Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" 
+                title="YouTube video player" frameborder="0" allowfullscreen>
+            </iframe>
+
+            <h3>Escucha mi canción favorita</h3>
+            <audio controls>
+                <source src="moja.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section>
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo"><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Joshua Hernández Ruiz - joshua@example.com - 2025</p>
+    </footer>
+</body>
+
+</html>
