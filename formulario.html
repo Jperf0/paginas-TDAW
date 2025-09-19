@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Registro</title>
+  <style>
+    body{font-family: system-ui, Arial, sans-serif; max-width:760px; margin:40px auto; line-height:1.4}
+    form{border:1px solid #ddd; padding:16px; border-radius:10px}
+    label{display:block; margin-top:10px}
+    input{width:100%; padding:8px; margin-top:4px}
+    button{margin-top:16px; padding:10px 16px; border:0; border-radius:8px; cursor:pointer}
+    .ok{background:#e8fff0; border:1px solid #a5e6b5; padding:10px; border-radius:8px}
+    .err{background:#fff3f0; border:1px solid #f2b4a8; padding:10px; border-radius:8px}
+    a{color:#0b5bd3; text-decoration:none}
+  </style>
+</head>
+<body>
+  <h1>Registro de Usuario</h1>
+  <form action="procesar_formulario.php" method="POST" novalidate>
+    <label for="nombre">Nombre</label>
+    <input id="nombre" name="nombre" type="text" required minlength="2" maxlength="100" />
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required maxlength="100" />
+
+    <label for="edad">Edad</label>
+    <input id="edad" name="edad" type="number" required min="1" max="120" />
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <p style="margin-top:20px">
+    <a href="mostrar_datos.php">Ver usuarios registrados</a>
+  </p>
+</body>
+</html>

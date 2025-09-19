@@ -1,0 +1,23 @@
+/* Tipografía y layout base */
+body{font-family:system-ui,Arial,sans-serif;max-width:900px;margin:40px auto;line-height:1.45}
+h1{margin-bottom:16px}
+
+/* Formularios */
+form{border:1px solid #ddd;border-radius:10px;padding:16px}
+label{display:block;margin-top:10px}
+input,button{padding:10px 12px}
+input{width:100%;margin-top:4px}
+button{border:0;border-radius:8px;cursor:pointer}
+
+/* Tablas */
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ddd;padding:10px;text-align:left}
+th{background:#f7f7f7}
+
+/* Mensajes */
+.ok{background:#e8fff0;border:1px solid #a5e6b5;padding:10px;border-radius:8px}
+.err{background:#fff3f0;border:1px solid #f2b4a8;padding:10px;border-radius:8px}
+
+/* Enlaces y paginador */
+a{color:#0b5bd3;text-decoration:none}
+.pager{margin-top:16px;display:flex;gap:12px;align-items:center}
